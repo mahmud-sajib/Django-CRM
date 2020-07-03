@@ -1,0 +1,38 @@
+{% extends 'crm/main.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container-fluid row-spacing">
+    <div class="row pt-50 pb-50">
+        <div class="col-lg-4 offset-lg-4">
+            <h1 class="text-center">Customer Profile</h1>
+        </div>
+    </div>
+
+<div class="row">
+    <div class="col-md-4 offset-md-2">
+        <div class="card card-body">
+            
+            
+            <img src="{{ request.user.customer.profile_pic.url }}" class="profile-pic">
+            <p class="text-center">
+                {{ user.username }} | Joined @ {{ user.customer.date_created }}
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card card-body">
+            <form method="POST" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form|crispy}}
+                <input type="submit" class="btn btn-primary" value="Update Info">
+            </form>
+        </div>
+    </div>
+
+</div>
+</div>
+
+{% endblock %}
+

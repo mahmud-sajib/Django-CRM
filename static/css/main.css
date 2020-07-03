@@ -1,0 +1,155 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: white;
+}
+
+h1{
+    font-size: 40px;
+    position:relative; 
+    padding:10px 5px; 
+    border-bottom:3px solid #68AB58; 
+    display: block;
+}
+
+h1:before {
+    content:""; 
+    display:block; 
+    position:absolute; 
+    left:0; 
+    bottom:5px; 
+    width:100%; 
+    height:3px;                          
+    background:#68AB58;
+}
+
+.navbar-brand img {
+	width: 50px;
+	height: auto;
+}
+
+.pt-50{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.pb-30{
+	padding-bottom: 30px;
+}
+
+.section-spacing{
+	padding: 20px 10px;
+	border-style: dashed;
+}
+
+.row-spacing{
+	margin: 20px 0;
+}
+
+select, input[type="date"] {
+	text-transform: none;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	margin: 0 20px 0 5px;
+}
+
+/********************* register ***********************/
+.user_card {
+	width: 350px;
+	margin-top: auto;
+	margin-bottom: auto;
+	background: #74cfbf;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+}
+
+.form_container {
+	margin-top: 20px;
+}
+
+#form-title {
+	color: #fff;
+}
+
+.login_btn {
+	width: 100%;
+	background: #33ccff !important;
+	color: white !important;
+}
+
+.login_btn:focus {
+	box-shadow: none !important;
+	outline: 0px !important;
+}
+
+.login_container {
+	padding: 0 2rem;
+}
+
+.input-group-text {
+	background: #f7ba5b !important;
+	color: white !important;
+	border: 0 !important;
+	border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
+.input_user,
+.input_pass:focus {
+	box-shadow: none !important;
+	outline: 0px !important;
+}
+
+#messages{
+	background-color: cornflowerblue;
+	color: #fff;
+	padding: 10px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.card-text{
+	font-size: 70px;
+}
+
+.hello-msg{
+	font-size: 18px;
+	color: #fff;
+	margin-right: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+	color: white;
+    margin: 0 10px;
+    
+}
+
+.navbar{
+	padding: 1.5rem 1rem;
+}
+
+footer{
+	background-color: cornflowerblue;
+    padding: 30px 0;
+    color: white;
+}
+
+.profile-pic{
+	max-width: 100px;
+	max-height: 100px;
+	margin: 0 auto;
+	border-radius: 50%;
+}
